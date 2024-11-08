@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Галактики{% endblock %}
+{% block content %}   
+
+{% for galaxy in galaxies %}
+
+<img src="{{galaxy[2]}}" width="350" height="350" class="m-1">
+{% endfor %}
+{% endblock %}
+
+

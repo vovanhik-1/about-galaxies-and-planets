@@ -1,0 +1,32 @@
+{% extends 'base2.html' %}
+{% block content %}
+{% for planet in planets %}
+<div class="row planet-item">
+    <div class="col-2">
+        <div class="planet-img">
+            <img src="{{ planet[2] }}" class="planet-img ml-3,5" alt="{{ planet[3] }}">
+        </div>
+    </div>
+<div class="col-6">
+    <h1>{{planet[1]}}</h1>
+    <p>{{planet[3]}}</p>
+</div>
+<hr>
+
+{% endfor %}
+<h1>Экзопланеты в Млечном Пути</h1>
+<hr>
+{% for planet in exoplanets %}
+<div class="row planet-item">
+    <div class="col-2">
+        <div class="planet-img">
+            <img src="{{ planet[2] }}" class="planet-img ml-3,5" alt="{{ planet[3] }}">
+        </div>
+    </div>
+<div class="col-6">
+    <h1>{{planet[1]}}</h1>
+    <p>{{planet[3]}}</p>
+</div>
+<hr>
+{% endfor %}
+{% endblock %}

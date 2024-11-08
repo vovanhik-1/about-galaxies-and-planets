@@ -1,0 +1,20 @@
+{% extends 'base2.html' %}
+{% block content %}
+
+{% for galaxy in galaxies %}
+<div class="row galaxy-item">
+    <div class="col-2">
+        <div class="galaxi-img">
+            <img src="{{ galaxy[2] }}" class="galaxy-img ml-4" alt="{{ galaxy[3] }}">
+        </div>
+    </div>
+<div class="col-6">
+        <h1>{{ galaxy[1] }}</h1>
+        <p>{{ galaxy[3] }}</p>
+        <button type="submit" class="btn btn-warning">Узнать про планеты и спутники в этой галактике</button>
+    </div>
+</div>
+<hr>
+{% endfor %}
+
+{% endblock %}
