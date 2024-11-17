@@ -14,8 +14,8 @@
 </head>
 <body>
 
-    <header class="header text-end">
-        <nav class="nav"> 
+    <header class="header">
+        <div class="nav"> 
                 <ul class="nav-list">
                     <li>
                         <a class="nav-list-link" href="">Про нас</a>
@@ -42,13 +42,8 @@
                         <a class="nav-list-link" href="">Поддержать</a> 
                     </li>
                 </ul>
-                <div class="nav-toggle">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                    class="burger-icon"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-                    class=""></path></svg>
-                </div>
             </div>
-        </nav>
+        </div>
         {% block header %}
         <div class="header-content">
             <h1 class="header-content-title">Присоединяйтесь к нам, чтобы узнать <br>
@@ -58,7 +53,7 @@
             <br>
             <a href="{{ url_for('satellit')}}" class="header-content-btn">Узнать про спутники →</a>
             <br>
-            <a href="{{ url_for('galaxy')}}" class="header-content-btn">Узнать про галактику→</a>
+            <a href="{{ url_for('galaxy')}}" class="header-content-btn">Узнать про галактику →</a>
         </div>
         {% endblock %}
         </div>
